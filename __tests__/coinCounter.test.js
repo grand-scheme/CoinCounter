@@ -17,7 +17,6 @@ describe ('CoinCounter', () => {
     // });
     
     test('it should return coinArray with property quarters equal to input divided by .25', () => {
-      let object = {};
       expect(coinCounter(4.00)).toEqual(16);
     });
 });

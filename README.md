@@ -5,8 +5,6 @@
 ## By _Shannon Grantski, Eric Endsleu, and Callie Stump_
 <hr>
 
-### _This project is not in a complete or portfolio ready state, and should not be considered representational of professional work._
-
 ## **Description**
 This is a coin counter application that takes X amount of money (such as $4.99) and determines the exact amount of change needed in quarters, dimes, nickels and pennies.
 
