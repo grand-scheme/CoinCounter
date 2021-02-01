@@ -5,18 +5,18 @@ let dimes;
 let nickles;
 let pennies;
 
-
-export const coinCounter = (money, quarters) => {
+let obj = {};
+export const coinCounter = (money) => {
     if (isNaN(money)) {
         return "error";
     }
     if (money / .25 > 0) {
-        quarters = Math.floor(money / .25);
+        obj.quarters = Math.floor(money / .25);
         // money = money % .25;
-        return coinCounter(money % .25, quarters);
+        return coinCounter(money % .25);
     } else 
     {
-        return quarters;
+        return obj.quarters;
     }
 }
     // else if  {
