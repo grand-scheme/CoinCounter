@@ -1,22 +1,22 @@
 import $ from 'jquery';
 // const coincounter
+// let quarters;
+let dimes;
+let nickles;
+let pennies;
 
 
-export const coinCounter = (money) => {
-    let coinArray = {};
-    
+export const coinCounter = (money, quarters) => {
     if (isNaN(money)) {
         return "error";
     }
-    if (money % .25 > 0) {
-        coinArray.quarters = Math.floor(money / .25);
-        money -= .25 * coinArray.quarters;
-        return coinCounter(money);
-        // money -= 'something';
-        // // return coinCounter(money);
-    } else if (money === 0)
+    if (money / .25 > 0) {
+        quarters = Math.floor(money / .25);
+        // money = money % .25;
+        return coinCounter(money % .25, quarters);
+    } else 
     {
-        return coinArray;
+        return quarters;
     }
 }
     // else if  {
