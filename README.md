@@ -2,7 +2,7 @@
 
 #### **02/01/21**
 
-## By _Shannon Grantski, Eric Endsleu, and Callie Stump_
+## By _Shannon Grantski, Eric Endsley, and Callie Stump_
 <hr>
 
 ## **Description**
