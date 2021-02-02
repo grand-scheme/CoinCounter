@@ -11,7 +11,7 @@ export const coinCounter = (money, object) => {
     if (isNaN(money)) {
         return "error";
     }
-    if (money == 0){
+    if (money === 0){
         return `quarters: ${obj.quarters}, dimes: ${obj.dimes}, nickles: ${obj.nickles}, pennies: ${obj.pennies}`;
     } else if (money / 0.25 >= 1) {
         obj.quarters = Math.floor(money / .25);
